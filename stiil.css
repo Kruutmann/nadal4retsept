@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Sedan+SC&display=swap');
+body{
+    background-color: rgb(255, 204, 1);
+}
+@keyframes vasakultsisse {
+    0% {
+        transform: translateX(-100%)rotate(-5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0)rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.pealkiri{
+    color: chocolate;
+    font-family: "Sedan SC", serif;
+    text-align: center;
+    animation: vasakultsisse 1s ease-out forwards;
+
+
+}
+.tekst{
+    color:rgb(245, 245, 245);
+    animation: fadeIn 1s ease-out forwards;
+    
+}
+.koostisosad{
+    color:white;
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+}}
+.footer{
+    text-align: center;
+    color: blueviolet;
+}
+.pilt{
+    text-align: center;
+    animation: zoomIn 1s ease-out forwards;
+}
